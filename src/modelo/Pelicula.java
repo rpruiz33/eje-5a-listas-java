@@ -1,6 +1,10 @@
 package modelo;
 
 public class Pelicula {
+public Pelicula() {
+		super();
+	}
+
 private int id_pelicula;
 private String pelicula;
 public Pelicula(int id_pelicula, String pelicula) {
@@ -18,6 +22,15 @@ public String getPelicula() {
 	return pelicula;
 }
 public void setPelicula(String pelicula) {
+	this.pelicula = pelicula;
+}
+
+@Override
+public String toString() {
+    return "ID: " + id_pelicula + ", Película: " + pelicula;
+}
+public Pelicula(String pelicula) {
+	super();
 	this.pelicula = pelicula;
 }
 }
